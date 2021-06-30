@@ -1,0 +1,161 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="SistemaVotaciones.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sistema de Votaciones</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/droid_sans_400-droid_sans_700.font.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/coin-slider.min.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        }
+        .auto-style2 {
+            color: #000000;
+        }
+        .auto-style3 {
+            width: 926px;
+            height: 100px;
+            top: 187px;
+            left: 16px;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .auto-style4 {
+            width: 924px;
+            height: 100px;
+            top: 503px;
+            left: 14px;
+            position: absolute;
+        }
+        .auto-style5 {
+            width: 933px;
+            height: 304px;
+            top: 813px;
+            left: 10px;
+            position: absolute;
+        }
+        .auto-style6 {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header_resize">
+                <div class="menu_nav">
+                    <ul>
+                        <li class="active"><a href="frmIndex.aspx"><span>Pagina Principal</span></a></li>
+                        <li><a href="frmRegistrarCandidatos.aspx"><span>Registrar Candidato</span></a></li>
+                        <li><a href="frmRegistrarVotante"><span>Registrar Votante</span></a></li>
+                        <li><a href="frmPropuestas"><span>Propuestas</span></a></li>
+                        <li><a href="frmEstadisticas"><span>Estadisticas</span></a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <h1><a href="index.html"><span class="auto-style2"><span class="auto-style1">Centro De Formacion</span></span> <span class="auto-style1"> <small class="auto-style2">CIMM</small></span></a></h1>
+                </div>
+                <div class="clr"></div>
+                <div class="slider">
+                    <div id="coin-slider"><a href="#">
+                        <img src="images/tarjeton02.jpg" width="940" height="310" alt="" /><img class="auto-style3" src="Imagenes_Sena/MAÑANA/tarjeton02.jpg" />
+                    </a><a href="#">
+                        <img src="images/tarjeton04.jpg" width="940" height="310" alt="" /><img class="auto-style4" src="Imagenes_Sena/MAÑANA/tarjeton04.jpg" />
+                    </a>
+                        <img class="auto-style5" src="Imagenes_Sena/MAÑANA/tarjeton05.jpg" /><a href="#"><img src="images/tarjeton05.jpg" width="940" height="310" alt="" />
+                    </a></div>
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_resize">
+                <div class="mainbar">
+                    <div class="article">
+                        <!--AQUI VA EL CONTENIDO-->
+                        <form id="form1" runat="server">
+                            <div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
+                </div>
+                <div class="sidebar">
+                    <div class="gadget">
+                        <h2 class="star"><span>Menu</span></h2>
+                        <div class="clr"></div>
+                        <ul class="sb_menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Votar</a></li>
+                            <li><a href="#">Resultados</a></li>
+                            <li><a href="#">Votaciones en tiempo real</a></li>
+                            <li><a href="#">Noticias</a></li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="fbg">
+            <div class="fbg_resize">
+                <div class="col c1">
+                    <h2>Logo</h2>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="auto-style6" src="Imagenes_Sena/WhatsApp%20Image%202021-06-23%20at%2011.09.44%20PM.jpeg" />
+                </div>
+                <div class="col c2">
+                    <h2><span>Services</span> Overview</h2>
+                    <p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>
+                    <ul class="fbg_ul">
+                        <li><a href="#">Lorem ipsum dolor labore et dolore.</a></li>
+                        <li><a href="#">Excepteur officia deserunt.</a></li>
+                        <li><a href="#">Integer tellus ipsum tempor sed.</a></li>
+                    </ul>
+                </div>
+                <div class="col c3">
+                    <h2><span>Contact</span> Us</h2>
+                    <p>Nullam quam lorem, tristique non vestibulum nec, consectetur in risus. Aliquam a quam vel leo gravida gravida eu porttitor dui.</p>
+                    <p class="contact_info">
+                        <span>Address:</span> 1458 TemplateAccess, USA<br />
+                        <span>Telephone:</span> +123-1234-5678<br />
+                        <span>FAX:</span> +458-4578<br />
+                        <span>Others:</span> +301 - 0125 - 01258<br />
+                        <span>E-mail:</span> <a href="#">mail@yoursitename.com</a>
+                    </p>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_resize">
+                <p class="lf">Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved</p>
+                <p class="rf">Design by <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a></p>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
